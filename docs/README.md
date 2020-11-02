@@ -2,21 +2,24 @@
 <img width="700" src="img/cover.png" alt="封面"/>
 </div>
 
-[本项目](https://TrickyGo.github.io/Dive-into-DL-TensorFlow2)将[《动手学深度学习》](http://zh.d2l.ai/) 原书中MXNet代码实现改为TensorFlow2.0实现。经过[archersama](https://github.com/archersama)的导师咨询李沐老师，这个项目的实施已得到李沐老师的同意。原书作者：阿斯顿·张、李沐、扎卡里 C. 立顿、亚历山大 J. 斯莫拉以及其他社区贡献者，GitHub地址：https://github.com/d2l-ai/d2l-zh
+[本项目](https://TrickyGo.github.io/Dive-into-DL-TensorFlow2)将[《动手学深度学习》](http://zh.d2l.ai/) 原书中MXNet代码实现改为TensorFlow2实现。经过[archersama](https://github.com/archersama)的导师咨询李沐老师，这个项目的实施已得到李沐老师的同意。原书作者：阿斯顿·张、李沐、扎卡里 C. 立顿、亚历山大 J. 斯莫拉以及其他社区贡献者，GitHub地址：https://github.com/d2l-ai/d2l-zh
 
 此书的[中](https://zh.d2l.ai/)、[英](https://d2l.ai/)版本存在一些不同，本项目主要针对此书的中文版进行TensorFlow2重构。另外，本项目也参考了对此书中文版进行PyTorch重构的项目[Dive-into-DL-PyTorch](https://github.com/ShusenTang/Dive-into-DL-PyTorch)，在此表示感谢。
 
-**现已更新到第九、十章，持续更新中。。。**
+**现已更新到十章，持续更新中。。。**
+
+## 项目已被机器之心等多家公众号[报导](https://zhuanlan.zhihu.com/p/96932594)，并且受到原作者李沐的[认可](https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0/issues/51)
+
 
 ## 简介
-本仓库主要包含code和docs两个文件夹（外加一些数据存放在data中）。其中code文件夹就是每章相关jupyter notebook代码（基于TensorFlow2.0）；docs文件夹就是markdown格式的《动手学深度学习》书中的相关内容，然后利用[docsify](https://docsify.js.org/#/zh-cn/)将网页文档部署到GitHub Pages上，由于原书使用的是MXNet框架，所以docs内容可能与原书略有不同，但是整体内容是一样的。欢迎对本项目做出贡献或提出issue。
+本仓库主要包含code和docs两个文件夹（外加一些数据存放在data中）。其中code文件夹就是每章相关jupyter notebook代码（基于TensorFlow2）；docs文件夹就是markdown格式的《动手学深度学习》书中的相关内容，然后利用[docsify](https://docsify.js.org/#/zh-cn/)将网页文档部署到GitHub Pages上，由于原书使用的是MXNet框架，所以docs内容可能与原书略有不同，但是整体内容是一样的。欢迎对本项目做出贡献或提出issue。
 
 ## 面向人群
 本项目面向对深度学习感兴趣，尤其是想使用TensorFlow2进行深度学习的童鞋。本项目并不要求你有任何深度学习或者机器学习的背景知识，你只需了解基础的数学和编程，如基础的线性代数、微分和概率，以及基础的Python编程。
 
 ## 食用方法 
 ### 方法一
-本仓库包含一些latex公式，但github的markdown原生是不支持公式显示的，而docs文件夹已经利用[docsify](https://docsify.js.org/#/zh-cn/)被部署到了GitHub Pages上，所以查看文档最简便的方法就是直接访问[本项目网页版](https://TrickyGo.github.io/Dive-into-DL-TensorFlow2.0)。当然如果你还想跑一下运行相关代码的话还是得把本项目clone下来，然后运行code文件夹下相关代码。
+本仓库包含一些latex公式，但github的markdown原生是不支持公式显示的，而docs文件夹已经利用[docsify](https://docsify.js.org/#/zh-cn/)被部署到了GitHub Pages上，所以查看文档**最简便的方法就是直接访问[本项目网页版](https://TrickyGo.github.io/Dive-into-DL-TensorFlow2.0)**。当然如果你还想跑一下运行相关代码的话还是得把本项目clone下来，然后运行code文件夹下相关代码。
 
 ### 方法二
 你还可以在本地访问文档，先安装`docsify-cli`工具:
@@ -104,7 +107,7 @@ docsify serve docs
    * [6.2 循环神经网络](chapter06_RNN/6.2_rnn.md)
    * [6.3 语言模型数据集（周杰伦专辑歌词）](chapter06_RNN/6.3_lang-model-dataset.md)
    * [6.4 循环神经网络的从零开始实现](chapter06_RNN/6.4_rnn-scratch.md)
-   * [6.5 循环神经网络的简洁实现](chapter06_RNN/6.5_rnn-pytorch.md)
+   * [6.5 循环神经网络的简洁实现](https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0/blob/master/docs/chapter06_RNN/6.5_rnn-keras.md)
    * [6.6 通过时间反向传播](chapter06_RNN/6.6_bptt.md)
    * [6.7 门控循环单元（GRU）](chapter06_RNN/6.7_gru.md)
    * [6.8 长短期记忆（LSTM）](chapter06_RNN/6.8_lstm.md)
@@ -131,7 +134,12 @@ docsify serve docs
    * [9.4 锚框](chapter09_computer-vision/9.4_anchor.md)
    * [9.5 多尺度目标检测](chapter09_computer-vision/9.5_multiscale-object-detection.md)
    * [9.6 目标检测数据集（皮卡丘）](chapter09_computer-vision/9.6_object-detection-dataset.md)
-   * 待更新...
+   * [9.8 区域卷积神经网络（R-CNN）系列](https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0/blob/master/docs/chapter09_computer-vision/9.8_rcnn.md)
+   * [9.9 语义分割和数据集](https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0/blob/master/docs/chapter09_computer-vision/9.9_semantic-segmentation-and-dataset.md)
+   * [9.10 全卷积网络（FCN）](https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0/blob/master/docs/chapter09_computer-vision/9_10_fcn.md)
+   * [9.11 样式迁移](https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0/blob/master/docs/chapter09_computer-vision/9_11_neural_style.md)
+   * [9.12 实战Kaggle比赛：图像分类（CIFAR-10）](https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0/blob/master/docs/chapter09_computer-vision/9_12_kaggle_cifar10.md)
+   * [9.13 实战Kaggle比赛：狗的品种识别（ImageNet Dogs](https://github.com/TrickyGo/Dive-into-DL-TensorFlow2.0/blob/master/docs/chapter09_computer-vision/9_13_kaggle_dog.md)
 * 10\. 自然语言处理
    * [10.1 词嵌入（word2vec）](chapter10_natural-language-processing/10.1_word2vec.md)
    * [10.2 近似训练](chapter10_natural-language-processing/10.2_approx-training.md)
@@ -145,6 +153,12 @@ docsify serve docs
    * [10.10 束搜索](chapter10_natural-language-processing/10.10_beam-search.md)
    * [10.11 注意力机制](chapter10_natural-language-processing/10.11_attention.md)
    * [10.12 机器翻译](chapter10_natural-language-processing/10.12_machine-translation.md)
+* 11\. 附录
+   * [11.1 主要符号一览](chapter11_appendix/11.1_notation.md)
+   * [11.2 数学基础](chapter11_appendix/11.2_math.md)
+   * [11.3 使用Jupyter记事本](chapter11_appendix/11.3_jupyter.md)
+   * [11.4 使用AWS运行代码](chapter11_appendix/11.4_aws.md)
+   * [11.5 GPU购买指南](chapter11_appendix/11.5_buy-gpu.md)
 
 持续更新中......
 
